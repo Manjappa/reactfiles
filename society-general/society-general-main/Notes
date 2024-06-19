@@ -1,0 +1,12 @@
+Meeting Id: 37790022501
+passcode: F4aYaK
+
+Notes:
+https://getbootstrap.com/
+https://getbootstrap.com/docs/5.3/getting-started/vite/
+
+npx create-react-app my-app
+cd my-app
+npm start
+
+https://docs.emmet.io/cheat-sheet/
