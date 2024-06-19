@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* var cart = {
+            title : "C.A.R.T",
+            getCostPrice : function(){
+                console.log(this.title);
+                return 100;
+            },
+            getSellingPrice : function(){
+                console.log(this.title);
+                var scope = this;
+                var calculateSellingPrice = function(){
+                    return scope.getCostPrice() * 0.2;
+                };
+                return this.getCostPrice() + calculateSellingPrice();
+            }
+        }; */
+        /* var getCostPrice = function(){
+            return 10000;
+        };
+        var cart = {
+            title : "C.A.R.T",
+            getCostPrice : () => {
+                return 100;
+            },
+            getSellingPrice : function(){
+                var calculateSellingPrice = () => {
+                    return this.getCostPrice() * 0.2;
+                };
+                return this.getCostPrice() + calculateSellingPrice();
+            }
+        };
+        console.log(cart.title);// C.A.R.T;
+        console.log(cart.getCostPrice());// 100;
+        console.log(cart.getSellingPrice());// ??? ;
+         */
+        var cart = {
+            title : "C.A.R.T",
+            getCostPrice : function(){
+                console.log(this.title);
+                return 100;
+            },
+            getSellingPrice : function(){
+                console.log(this.title);
+                var calculateSellingPrice = () => {
+                    return this.getCostPrice() * 0.2;
+                };
+                return this.getCostPrice() + calculateSellingPrice();
+            }
+        };
+        console.log(cart.getSellingPrice())
+        /*      
+        var user = "vijay";
+        console.log(window.user);
+        console.log(user); 
+        */
+        </script>
+</head>
+<body>
+    
+</body>
+</html>

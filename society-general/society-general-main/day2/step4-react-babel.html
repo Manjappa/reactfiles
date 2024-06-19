@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script/react.js"></script>
+    <script src="script/react-DOM.js"></script>
+    <script src="script/babel.js"></script>
+    <script type="text/babel">
+    /* 
+    let List = function(){
+        return <li>List Item</li>
+    }
+    let unlist = <ul>
+                    <List/>
+                    <List/>
+                    <List/>
+                    <List/>
+                    <List/>
+                    <List/>
+                    <List/>
+                </ul> 
+    */
+   /* 
+    
+   */
+     let Article = function(props){
+        return <article>
+                    <h2>{ props.title }</h2>
+                    <h3>{ props.version }</h3>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, rem? Distinctio omnis odio animi. Assumenda distinctio totam, tempore id suscipit molestias dolorem, provident quidem atque, minima fugit quis iure expedita!
+                    Quo repellendus voluptas totam, tempora tenetur odit perferendis nihil perspiciatis, alias sequi labore assumenda animi dolorum tempore distinctio accusantium aspernatur qui soluta ullam nulla! Ullam alias vero omnis sit nihil.
+                    Architecto id unde odio eius, ducimus vero nostrum illum quibusdam sapiente suscipit magnam labore, temporibus ipsam! Dolor, ipsa nulla alias maxime asperiores vel obcaecati illum quod adipisci omnis, beatae facere.
+                    Quas sit repellat similique architecto quidem ex asperiores perspiciatis nisi obcaecati ut a quod quasi officiis, deserunt maiores quia. Deserunt, explicabo? Incidunt distinctio, quibusdam itaque aut nisi id quasi modi.
+                    Voluptatem, odit obcaecati soluta corporis ut unde esse odio autem consequuntur quibusdam sint perspiciatis in voluptate ipsa neque tempora illo! Soluta delectus et cupiditate quia obcaecati nemo ab facere dolor.
+                </article>
+     }
+     let content = <div>
+                        <header>
+                            <h2>Welcome to Society Generale</h2>
+                        </header>
+                        <main>
+                            <Article version="1001" title="First Paragraph"/>
+                            <Article version="1002" title="Second Paragraph"/>
+                            <Article version="1003" title="Third Paragraph"/>
+                        </main>
+                        <footer>
+                            <h3>&copy; Copyright reserved by Soc Gen</h3>
+                        </footer>
+                    </div> 
+        ReactDOM.createRoot(document.getElementById("root")).render(content)
+    </script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+Auto Rename Tag
+v0.1.10
+Jun Han
+++++++++++++++++++++++++
+Live Server
+v5.7.9
+Ritwick Dey
+++++++++++++++++++++++++
+Mithril Emmet
+v0.7.7
+FallenMax
+++++++++++++++++++++++++
+npm Intellisense
+v1.4.5
+Christian Kohler
+++++++++++++++++++++++++
+open in browser
+v2.0.0
+TechER
+++++++++++++++++++++++++
+Prettier - Code formatter
+v10.4.0
+Prettier
+++++++++++++++++++++++++
+vscode-icons
+v12.8.0
+VSCode Icons Team
+++++++++++++++++++++++++
+
+
+
+https://github.com/coreybutler/nvm-windows/releases
+
+
+https://developer.mozilla.org
+
+link for React CDN
+
+https://legacy.reactjs.org/docs/cdn-links.html
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Vite Commands 
+-------------
+
+npm create vite@latest steps -- --template react 
+cd steps
+npm install
+npm run dev
+http://localhost:5173/

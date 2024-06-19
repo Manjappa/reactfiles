@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* 
+            properties
+                static
+                public
+                private
+                    getter
+                    setter
+            methods
+                static
+                public
+                private
+        */
+        class Person{
+            ability = "i can walk";
+            constructor(nability){
+                this.ability = nability;
+            }
+        }
+        class Hero extends Person{
+            // public property
+            title = '';
+            firstname = '';
+            lastname = '';
+            static version = 1001;
+            // private property
+            #power = 0;
+            constructor(htitle = "", hfname = "", hlname = "", hpower = 0, hability){
+                super(hability);
+                this.title = htitle;
+                this.firstname = hfname;
+                this.lastname = hlname;
+                this.#power = hpower;
+            }
+            // public method
+            sayFullName = () => {
+                return this.firstname+" "+this.lastname;
+            }
+            get power(){
+                return this.#power;
+            }
+            set power(npower){
+                this.#power = npower;
+            } 
+            static sayLanguage(){
+                return "Hindi";
+            }
+            #myprivatemethod = () => {
+                return "Hero's private method"
+            }
+        };
+        var hero = new Hero("Spiderman","Peter","Parker",5,"I can fly")
+        console.log( hero.title );
+        console.log( hero.sayFullName() );
+        console.log(Hero.version);
+        console.log(Hero.sayLanguage());
+        
+        console.log( hero.power );// getter
+        hero.power = 10; // setter
+        console.log( hero.power );// getter
+        // console.log(hero.version);
+        console.log(hero.ability);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

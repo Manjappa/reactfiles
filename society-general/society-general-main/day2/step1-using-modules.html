@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles/bootstrap.min.css" rel="stylesheet">
+    <script type="module">
+        import fn,{favNumGtThan50, total} from "./modules/favnums.js";
+        document.addEventListener("DOMContentLoaded", () => {
+            fn.forEach(val => document.getElementById("favlist").innerHTML += "<li class='list-group-item'> "+val+" </li>")
+            favNumGtThan50.forEach(val => document.getElementById("gt50list").innerHTML += "<li class='list-group-item list-group-item-dark'> "+val+" </li>")
+            document.getElementById("gt50").textContent = favNumGtThan50;
+            document.getElementById("sumofgt50").textContent = total;
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+       <div class="row">
+        <div class="col">
+            <h2>list of all fav numbers</h2>
+            <ol class="list-group" id="favlist"></ol>
+        </div>
+        <div class="col">
+            <h2>list of all fav numbers greater than 50</h2>
+            <ol class="list-group"  id="gt50list"></ol>
+        </div>
+       </div>
+        <h2>sum of all fav nums that are greater than 50 <span id="sumofgt50"></span></h2>
+    </div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+import { Component } from "react";
+
+class App extends Component{
+    state = {
+        show : true
+    }
+    render(){
+       if(this.state.show){
+            return <div> <input type="checkbox" onChange={() => this.setState({ show : !this.state.show })}/> <h1>Show is true</h1></div> 
+       }else{
+            return <div> <input type="checkbox" onChange={() => this.setState({ show : !this.state.show })}/> <h1>Show is false</h1></div> 
+       }
+    }
+}
+
+export default App;

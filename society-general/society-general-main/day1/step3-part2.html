@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: darkslateblue;
+            height: 300px;
+            border: 1px solid transparent;
+            overflow: auto;
+        }
+        .container .box{
+            background-color: rgb(222, 235, 80);
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+            float: left;
+            font-size: 36px;
+            text-align: center;
+            line-height: 100px;
+        }
+    </style>
+    <script>
+        function clickHandler(){
+          // virtual element
+          var box = document.createElement("div");
+          box.innerText = document.getElementsByClassName("container")[0].children.length;
+          box.setAttribute("class","box");
+          document.getElementsByClassName("container")[0].appendChild(box);
+        };
+        function removeEndHandler(){
+            var box = document.getElementsByClassName("container")[0].lastChild;
+            document.getElementsByClassName("container")[0].removeChild(box);
+        }
+        function init(){
+            document.getElementsByTagName("button")[0].addEventListener("click", clickHandler);
+            document.getElementsByTagName("button")[1].addEventListener("click", removeEndHandler);
+        }
+        document.addEventListener("DOMContentLoaded", init);
+    </script>
+</head>
+<body>
+    <button>Add Box</button>
+    <button>Remove Boxes From End</button>
+    <button>Remove Boxes From Start</button>
+    <div class="container"></div>
+</body>
+</html>

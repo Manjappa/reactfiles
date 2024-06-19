@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script/react.js"></script>
+    <script src="script/react-DOM.js"></script>
+    <script>
+        //virtual elements
+        let list1 = React.createElement("li",{class:"box"},"List Item 1");
+        let list2 = React.createElement("li",{class:"box"},"List Item 2");
+        let list3 = React.createElement("li",{class:"box"},"List Item 3");
+        let list4 = React.createElement("li",{class:"box"},"List Item 4");
+        let list5 = React.createElement("li",{class:"box"},"List Item 5");
+        let unlist = React.createElement("ul",null,[list1,list2,list3,list4,list5]);
+        document.addEventListener("DOMContentLoaded", function(){
+            //attach virtual elements to real element
+            ReactDOM.createRoot(document.getElementById("root")).render(unlist)
+        })
+    </script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>

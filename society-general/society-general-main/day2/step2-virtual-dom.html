@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function init(){
+            /* virtual element */
+            var unlist = document.createElement("ul");
+            var list1 = document.createElement("li");
+                        list1.setAttribute("class","box");
+                        list1.innerText = "List Item 1";
+            var list2 = document.createElement("li");
+                        list2.setAttribute("class","box");
+                        list2.innerText = "List Item 2";
+            var list3 = document.createElement("li");
+                        list3.setAttribute("class","box");
+                        list3.innerText = "List Item 3";
+            var list4 = document.createElement("li");
+                        list4.setAttribute("class","box");
+                        list4.innerText = "List Item 4";
+            var list5 = document.createElement("li");
+                        list5.setAttribute("class","box");
+                        list5.innerText = "List Item 5";
+            // identify real element
+            unlist
+            .appendChild(list1)
+            .appendChild(list2)
+            .appendChild(list3)
+            .appendChild(list4)
+            .appendChild(list5);
+            document.getElementById("root").appendChild(unlist);
+        }
+        document.addEventListener("DOMContentLoaded", init);
+    </script>
+</head>
+<body>
+    <div id="root"></div> 
+</body>
+</html>
